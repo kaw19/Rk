@@ -27,29 +27,9 @@ void setup() {
 }
 
 void loop() {
-//   infravermelho(DIREITO);
-//   delay(1000);
-//  led(VERM,LIGA);           // Passo B
-//  apitar(0.5);              // Passo A
-//  mover(40,NORMAL);
-//  led(VERM,DESLIGA);
-//  led(VERD,LIGA);           // Passo C
-//  virar(360);
-//  led(VERD,DESLIGA);
-//  led(AZUL,LIGA);           // Passo D
-//  mover(-20,NORMAL);
-//  led(AZUL,DESLIGA);
-//  apitar(0.5);              // Passo E
-//  fim();
-  
-  if (infravermelho(DIREITO) && infravermelho(ESQUERDO))
-    // led(VERM, LIGA);
-    avancar();
-  if (!infravermelho(DIREITO) && infravermelho(ESQUERDO))
-    direita();
-  if (infravermelho(DIREITO) && !infravermelho(ESQUERDO))
-    esquerda();
-  if (!infravermelho(DIREITO) && !infravermelho(ESQUERDO)) {   // encontrou linha transversal
+  if (ultrassom() > 30)
+    mover(20,NORMAL);
+  else { 
     pararMotor('*');
     fim();
   }
