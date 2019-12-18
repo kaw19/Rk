@@ -1,0 +1,7 @@
+This folder contains test sketchs used after Rk assembly.
+There are sketchs to test all Rk's elements (sensors and actuators):
+1. RGB_LED: verifys LED RGB action, blinking each color for 1 sec.
+2. BUZ: beeps with 1 sec. of interval.
+3. ULTRA: shows distance measured (cm) in serial monitor.
+4. MOT: drives motors with movements forward and backward.
+5. IV:
