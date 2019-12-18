@@ -5,3 +5,4 @@ There are sketchs to test all Rk's elements (sensors and actuators):
 3. ULTRA: shows distance measured (cm) in serial monitor.
 4. MOT: drives motors with movements forward and backward.
 5. IV:
+6. ENC:
